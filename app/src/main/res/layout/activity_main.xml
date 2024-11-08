@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#21293A"
+    android:padding="10dp"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/fitness" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="left"
+        android:text="Your Fitness App"
+        android:textColor="#51EBD6"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Welcome to your best health and fitness organizing application"
+        android:textColor="#FCFFFF"
+        android:textSize="42dp" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#51EBD6"
+        android:text="Get Started ->"
+        android:textColor="#21293A"
+        android:textSize="24sp"
+        app:cornerRadius="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- CardView in ConstraintLayout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Inner content of CardView in ConstraintLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical"
+            android:background="#21293A">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#EBEFF6"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="duration"
+                    android:textColor="#E8EDF8"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnVideo"
+                    android:layout_width="64dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="130dp"
+                    android:backgroundTint="#36435D"
+                    android:drawablePadding="0dp"
+                    android:includeFontPadding="false"
+                    android:padding="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:text="Learn"
+                    android:textColor="#51EBD6"
+                    app:cornerRadius="10dp"
+                    app:iconPadding="0dp" />
+
+                <Button
+                    android:id="@+id/btnStart"
+                    android:layout_width="64dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:backgroundTint="#51EBD6"
+                    android:drawablePadding="0dp"
+                    android:includeFontPadding="false"
+                    android:padding="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:text="Start"
+                    android:textColor="#21293A"
+                    app:cornerRadius="10dp"
+                    app:iconPadding="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
